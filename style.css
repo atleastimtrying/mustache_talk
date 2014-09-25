@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+    color:#333;
+    list-style:none;
+    border-radius:2px;
+}
+html{
+    background:#eee;
+}
+section{
+    margin:20px;
+    padding:19px;
+    border: 1px solid #ddd;
+    background:white;
+    box-sizing:border-box;
+}
+h1{
+    font-size:40px;
+    font-weight:lighter;
+    margin-bottom:15px;
+}
+p{
+    font-style:italic;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+ul li a{
+    text-decoration:none;
+    border:1px solid #eee;
+    background:#f5f5f5;
+    padding:14px;
+    display:block;
+}
+
+nav{
+    font-size:0;
+}
+
+nav a{
+    font-size:20px;
+    display:inline-block;
+    width:50%;
+    padding:25px 0;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    opacity:0.7;
+    line-height:0;
+    vertical-align:top;
+    transition:opacity 0.5s ease-out;
+}
+
+nav a:hover{
+    opacity:1;
+}
+
+nav a.tel{
+    background:rgb(44, 147, 173);
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    font-size:20px;
+}
+
+nav a.email{
+    background:rgb(44, 173, 44);
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    font-size:30px;
+}
+@media all and (max-width:400px){
+    section{
+        margin:10px;
+    }
+    p{
+        font-size:15px;
+    }
+}
+@media all and (min-width:600px){
+    ul{
+        font-size:0;
+    }
+    ul li{
+        display:inline-block;
+        width:49%;
+        margin-right:2%;
+    }
+    ul li:nth-child(even){
+        margin-right:0;
+    }
+    ul li a{
+        font-size:15px;
+    }
+}
