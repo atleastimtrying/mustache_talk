@@ -1,0 +1,64 @@
+[
+  {
+    "title": "what is mustache?",
+    "bullets": [
+      "Mustache is a simple templating language",
+      "It’s based on the ethos of logic less templates",
+    ]
+  },
+  {
+    "title": "when you use it?",
+    "bullets": [
+      "Front end templating for single page apps",
+      "when you handle html",
+      "when you have repeating units"
+    ]
+  },
+  {
+    "title": "why you use it",
+    "bullets": [
+      "separate html content from js",
+      "keep your code trackable/editable",
+      "makes for clear code for teams"
+    ]
+  },
+  {
+    "title": "why you might not use it",
+    "bullets": [
+      "not a huge amount of html manipulation",
+      "tiny lightweight apps",
+      "using angular/react js"
+    ]
+  },
+  {
+    "title": "how to use it",
+    "bullets": [
+      "create met file/script tag",
+      "load markup with must ache tags with json object",
+      "combine the two",
+      "inject into your html"
+    ]
+  },
+  {
+    "title": "code tour",
+    "bullets": [
+
+    ]
+  },
+  {
+    "title": "advantages",
+    "bullets": [
+      "clear separation of code",
+      "tidy single use templates ideal for version control"
+    ]
+  },
+  {
+    "title": "how i bind it to an event",
+    "bullets": [
+      "render event which gets passed options",
+      "named template",
+      "associated json object",
+      "accessible app wide"
+    ]
+  }
+]
