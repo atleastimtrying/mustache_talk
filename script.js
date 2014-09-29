@@ -1,6 +1,8 @@
 window.talk = {
   templates: {
-    slide: 'templates/slide.mst'
+    slide: 'templates/slide.mst',
+    alt_slide: 'templates/alt_slide.mst',
+    bells_and_whistles: 'templates/bells_and_whistles.mst'
   }
 };
 
@@ -32,9 +34,11 @@ talk.Slides = function(){
   
   var render = function(){
     var view = slides[position];
-    view.position = position + 1;
+    if(view){
+      view.position = position + 1;
+    }
     $(talk).trigger('render', {
-      template: 'slide',
+      template: 'alt_slide',
       view: view,
       complete: function(html){
         console.log(html);
@@ -79,5 +83,25 @@ $(function(){
   var slides = new talk.Slides();
   var renderer = new talk.Renderer();
   var inputs = new talk.Inputs();
-  
+  $(talk).on('b_w', function(){
+    var view = {
+      title: 'bells & whistles',
+      table: 
+      [
+        ['cell1a','cell1b','cell1c','cell1d'],
+        ['cell2a','cell2b','cell2c','cell2d'],
+        ['cell3a','cell3b','cell3c','cell3d'],
+        ['cell4a','cell4b','cell4c','cell4d'],
+      ],
+      present:true,
+      unescaped: '<h1>THIS <br>IS <br>SOME <br>UNESCAPED <br>HTML!</h1>'
+    };
+    $(talk).trigger('render',{
+      template: 'bells_and_whistles',
+      view: view,
+      complete: function(html){
+        console.log(html);
+      }
+    })
+  });
 });

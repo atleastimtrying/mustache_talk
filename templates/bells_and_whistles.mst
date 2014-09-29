@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<table>
+{{#table}}
+  <tr>
+    {{#.}}
+      <td>{{.}}</td>
+    {{/.}}
+  </tr>
+{{/table}}
+</table>
+<h2>if/else</h2>
+{{#present}}
+  <p>present is present</p>
+{{/present}}
+{{^present}}
+  <p>present is absent</p>
+{{/present}}
+
+{{{unescaped}}}

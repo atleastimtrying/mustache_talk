@@ -1,0 +1,6 @@
+<div class="alt">
+  <h3>{{title}} - {{position}}</h3>
+  {{#bullets}}
+    <p>{{.}}</p>
+  {{/bullets}}
+</div>
